@@ -1,6 +1,7 @@
 import React from 'react'
 import './QuienesSomos.css';
 import groupImage from '../assets/quienes-somos.jpg'; // Asegúrate de usar la ruta correcta de tu imagen
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 const QuienesSomos = () => {
     return (
@@ -16,7 +17,11 @@ const QuienesSomos = () => {
         <p>
         "Promover y garantizar el ejercicio pleno de los derechos sexuales y reproductivos de las comunidades vulnerables, adolescentes y personas con discapacidad...
         <button className="quienes-somos-button">
-          Ver Más 
+          <Link to="/nosotros#mision-vision" onClick={() => {
+              setTimeout(() => {
+                  document.getElementById('mision-vision').scrollIntoView({ behavior: 'smooth' });
+              }, 100);
+          }}>Ver Más</Link>
         </button>
         </p>
       
@@ -24,7 +29,11 @@ const QuienesSomos = () => {
         <p>
         "Ser líderes en la provisión de servicios de salud sexual y reproductiva y planificación familiar...                              
         <button className="quienes-somos-button">
-          Ver Más
+          <Link to="/nosotros#mision-vision" onClick={() => {
+              setTimeout(() => {
+                  document.getElementById('mision-vision').scrollIntoView({ behavior: 'smooth' });
+              }, 100);
+          }}>Ver Más</Link>
         </button>
          </p>
       </div>

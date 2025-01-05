@@ -5,7 +5,7 @@ import misionImage from '../../assets/mision.jpg'; // Reemplaza con la ruta de t
 
 const MisionVision = () => {
     return (
-        <section className="mision-vision">
+        <section id="mision-vision" className="mision-vision">
             <h2 className="mision-vision-title">¿Quiénes somos?</h2>
             <div className="mision-vision-divider"></div>
             <div className="mision-vision-container">

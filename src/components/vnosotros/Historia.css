@@ -1,0 +1,137 @@
+.historia {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.historia-title {
+    font-size: 2.5rem;
+    color: #00324c;
+    margin-bottom: 1rem;
+}
+
+.historia-divider {
+    width: 80px;
+    height: 4px;
+    background-color: #21b5ad;
+    margin: 0 auto 2rem auto;
+}
+
+.historia-timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.historia-line {
+    position: absolute;
+    width: 4px;
+    background-color: #21b5ad;
+    top: 0;
+    bottom: 0;
+    left: 25%; /* Move the line to the left */
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.historia-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+    width: 100%;
+    max-width: 900px;
+    z-index: 1;
+}
+
+.historia-item.left {
+    flex-direction: row;
+    text-align: left;
+    justify-content: flex-end;
+}
+
+.historia-item.right {
+    flex-direction: row-reverse;
+    text-align: right;
+    justify-content: flex-start;
+}
+
+.historia-content {
+    flex: 1;
+    max-width: 300px;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.historia-fecha {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #21b5ad;
+    margin-bottom: 0.5rem;
+}
+
+.historia-titulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #00324c;
+}
+
+.historia-descripcion {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.historia-imagen {
+    flex: 0.5;
+    max-width: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+.historia-imagen:hover {
+    transform: scale(1.05);
+}
+
+.historia-point {
+    width: 20px;
+    height: 20px;
+    background-color: #21b5ad;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 25%; /* Align points with the line */
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .historia-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .historia-item.left,
+    .historia-item.right {
+        justify-content: center;
+    }
+
+    .historia-imagen {
+        margin-top: 1rem;
+    }
+}
