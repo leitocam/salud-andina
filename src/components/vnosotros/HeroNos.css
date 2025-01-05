@@ -1,0 +1,181 @@
+/* Estilos principales del Hero */
+.hero {
+    position: relative;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Contenedor general del contenido */
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 800px;
+    padding: 1rem;
+}
+
+/* Caja detrás del texto */
+.hero-text-box {
+    background-color: rgba(0, 10, 15, 0.8); /* Fondo oscuro semi-transparente */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
+}
+
+/* Título principal */
+.hero-title {
+    font-size: 3.5rem; /* Aumenta el tamaño de la fuente */
+    font-weight: bolder; /* Más negrita */
+    margin-bottom: 1rem;
+    color: #2dd7ce; /* Azul llamativo */
+}
+
+/* Descripción */
+.hero-description {
+    font-size: 1.5rem; /* Tamaño de fuente ligeramente menor */
+    margin-bottom: 1.5rem;
+    line-height: 1.8; /* Interlineado adecuado */
+    color: #ffffff;
+}
+
+/* Botón personalizado */
+.hero-button {
+    cursor: pointer;
+    border: none;
+    background: #7808d0;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    place-content: center;
+    transition: background 300ms, transform 200ms;
+    font-weight: 600;
+}
+
+.hero-button__text {
+    position: absolute;
+    inset: 0;
+    animation: text-rotation 8s linear infinite;
+}
+
+.hero-button__text > span {
+    position: absolute;
+    transform: rotate(calc(19deg * var(--index)));
+    inset: 7px;
+}
+
+.hero-button__circle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    background: #fff;
+    color: #7808d0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-button__icon--copy {
+    position: absolute;
+    transform: translate(-150%, 150%);
+}
+
+.hero-button:hover {
+    background: #000;
+    transform: scale(1.05);
+}
+
+.hero-button:hover .hero-button__icon {
+    color: #000;
+}
+
+.hero-button:hover .hero-button__icon:first-child {
+    transition: transform 0.3s ease-in-out;
+    transform: translate(150%, -150%);
+}
+
+.hero-button:hover .hero-button__icon--copy {
+    transition: transform 0.3s ease-in-out 0.1s;
+    transform: translate(0);
+}
+
+@keyframes text-rotation {
+    to {
+        rotate: 360deg;
+    }
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .hero {
+        height: 300px;
+        align-items: flex-start; /* Mueve el contenido hacia la parte superior */
+        justify-content: flex-start; /* También alinea el contenido al inicio verticalmente */
+        padding-top: 2rem; /* Ajusta el espacio superior */
+    }
+
+    .hero-content {
+        padding-top: 1rem; /* Espacio adicional para separarlo del borde */
+    }
+
+    .hero-title {
+        font-size: 3rem;
+        margin-top: 0; /* Sin margen superior extra */
+    }
+
+    .hero-description {
+        font-size: 1.2rem;
+    }
+
+    .hero-text-box {
+        padding: 1.5rem;
+    }
+
+    .hero-button {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 250px;
+        align-items: flex-start; /* Mueve el contenido hacia la parte superior */
+        justify-content: flex-start; /* También alinea el contenido al inicio verticalmente */
+        padding-top: 1rem; /* Ajusta el espacio superior */
+    }
+
+    .hero-content {
+        padding-top: 0.5rem; /* Más cerca del borde superior */
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+        margin-top: 0; /* Sin margen superior extra */
+    }
+
+    .hero-description {
+        font-size: 1.2rem;
+    }
+
+    .hero-text-box {
+        padding: 1rem;
+    }
+
+    .hero-button {
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+    }
+}

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap');
+
+/* Estilo global para todo el proyecto */
+html, body {
+  font-family: 'Josefin Sans', sans-serif; /* Fuente predeterminada para todo */
+  margin: 0;                              /* Elimina márgenes */
+  padding: 0;                             /* Elimina padding */
+  box-sizing: border-box;                 /* Asegura que el box model sea consistente */
+  -webkit-font-smoothing: antialiased;    /* Suaviza fuentes en navegadores webkit */
+  -moz-osx-font-smoothing: grayscale;     /* Suaviza fuentes en macOS */
+}
+
+/* Aplica el box-sizing globalmente para evitar problemas de padding */
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Estilo de fuente para elementos de código */
+code {
+  font-family: 'Source Code Pro', Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-size: 1rem; /* Ajusta el tamaño de fuente para bloques de código */
+}
+
+/* Estilo para encabezados */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+}
+
+/* Párrafos y texto general */
+p {
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.6; /* Mejora la legibilidad */
+  margin: 0 0 1rem;
+}
+
+/* Botones */
+button {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600; /* Negrita para botones */
+  border: none;
+  cursor: pointer;
+}
+
+/* Enlaces */
+a {
+  font-family: 'Josefin Sans', sans-serif;
+  text-decoration: none; /* Elimina subrayado predeterminado */
+  color: inherit;        /* Usa el color del elemento padre */
+  transition: color 0.3s ease; /* Transición para cambios de color */
+}
+
+a:hover {
+  color: #1a958d; /* Cambia a un color de hover */
+}
+
+/* Listas */
+ul, ol {
+  font-family: 'Josefin Sans', sans-serif;
+  padding-left: 1.5rem;
+  margin: 0;
+}

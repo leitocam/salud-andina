@@ -1,0 +1,166 @@
+/* Ajusta este color al que quieras (basado en tu diseño). */
+:root {
+    --color-bg: #43B3B5;  /* Turquesa de fondo principal (ejemplo) */
+    --color-white: #ffffff;
+    --color-text: #fff; 
+    --color-hover: #cbeae7; /* Color de hover para el texto, si quieres */
+    --color-donar-bg: #fff; 
+    --color-donar-text: #43B3B5; 
+  }
+  
+  /* Estilos generales del header */
+  .header {
+    background-color: var(--color-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    /* Si deseas un sticky header al hacer scroll */
+    /* position: sticky;
+    top: 0;
+    z-index: 999; */
+  }
+  
+  /* Contenedor del logo y texto */
+  .header__logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .header__logo {
+    width: 50px;  /* ajusta según el tamaño que quieras */
+    height: auto;
+  }
+  
+  /* Título del header */
+    .header__title {
+    color: var(--color-white); /* Color inicial */
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.2;
+    text-decoration: none; /* Elimina el subrayado */
+    transition: color 0.3s ease; /* Suaviza el cambio de color en hover */
+  }
+  
+  /* Hover para el título */
+  .header__title:hover {
+    color: var(--color-hover); /* Cambia al color definido en --color-hover */
+  }
+  
+  
+  /* Navegación */
+  .header__nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Lista de links */
+  .header__nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Enlaces del menú */
+  .header__nav-list a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+  }
+  
+  /* Efecto hover */
+  .header__nav-list a:hover {
+    color: var(--color-hover);
+  }
+  
+  /* Botón “Donar” */
+  .header__donar-btn {
+    display: inline-block;
+    margin-left: 2rem;
+    background-color: var(--color-donar-bg);
+    color: var(--color-donar-text);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Hover para botón */
+  .header__donar-btn:hover {
+    background-color: var(--color-donar-text);
+    color: var(--color-donar-bg);
+  }
+  
+  /* =========================
+     Responsividad
+     ========================= */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .header__nav {
+      margin-top: 1rem;
+      width: 100%;
+      justify-content: space-between;
+    }
+  
+    .header__nav-list {
+      gap: 1rem;
+    }
+  
+    .header__donar-btn {
+      margin-left: 0;
+    }
+  }
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header__nav {
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .header__nav-list {
+    gap: 1rem;
+  }
+
+  /* Ajustar los enlaces del menú */
+  .header__nav-list a {
+    font-size: 1rem; /* Reducir el tamaño del texto */
+  }
+
+  /* Ajustar el botón “Donar” */
+  .header__donar-btn {
+    font-size: 1rem; /* Reducir el tamaño del texto */
+    padding: 0.4rem 0.8rem; /* Reducir el relleno interno */
+    border-radius: 3px; /* Hacer los bordes más redondeados */
+    margin-left: 0; /* Eliminar el margen adicional */
+  }
+}
+
+/* Ajustes adicionales para pantallas muy pequeñas (como teléfonos compactos) */
+@media (max-width: 480px) {
+  .header__nav-list a {
+    font-size: 0.95rem; /* Reducir un poco más el tamaño del texto */
+  }
+
+  .header__donar-btn {
+    font-size: 0.95rem; /* Reducir el texto del botón */
+    padding: 0.3rem 0.6rem; /* Reducir aún más el relleno interno */
+  }
+}

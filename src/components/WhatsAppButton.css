@@ -1,0 +1,45 @@
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    padding: 0.6rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    z-index: 999; /* encima de casi todo */
+  }
+  
+  /* El ícono de WhatsApp */
+  .whatsapp-button img {
+    width: 24px;
+    height: 24px;
+    display: block;
+  }
+  
+  /* Efecto hover */
+  .whatsapp-button:hover {
+    transform: scale(1.05);
+    background-color: #ebebeb;
+  }
+  
+  /* Ajustes responsivos */
+  @media (max-width: 768px) {
+    .whatsapp-button {
+      bottom: 15px;
+      right: 15px;
+      padding: 0.4rem 0.8rem;
+      font-size: 0.9rem;
+    }
+    .whatsapp-button img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  

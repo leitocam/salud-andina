@@ -1,0 +1,80 @@
+/* Estilos para la sección Misión y Visión */
+.mision-vision {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.mision-vision-title {
+    font-size: 2.5rem;
+    color: #00324c;
+    margin-bottom: 1rem;
+}
+
+.mision-vision-divider {
+    width: 80px;
+    height: 4px;
+    background-color: #21b5ad;
+    margin: 0 auto 2rem auto;
+}
+
+.mision-vision-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.mision-vision-item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.mision-vision-item.reverse {
+    flex-direction: row-reverse; /* Invertir para la tarjeta Misión */
+}
+
+.mision-vision-image {
+    flex: 1;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mision-vision-card {
+    flex: 2;
+    background-color: #21b5ad;
+    color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.mision-vision-card-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 0.5rem;
+}
+
+.mision-vision-card-text {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .mision-vision-item {
+        flex-direction: column;
+    }
+
+    .mision-vision-item.reverse {
+        flex-direction: column;
+    }
+
+    .mision-vision-image {
+        max-width: 100%;
+    }
+}

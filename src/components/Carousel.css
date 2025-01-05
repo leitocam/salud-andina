@@ -1,0 +1,158 @@
+/* =========================
+   Contenedor del carrusel
+   ========================= */
+   .carousel-container {
+    width: 90%;      /* Ajusta según necesites */
+    margin: 0 auto;  /* Centra horizontalmente */
+    position: relative;
+    padding: 7rem 0;/* Increased padding for top and bottom */
+    background-color: #f5f5f5;
+  }
+  /* Opcional: Fondo de toda la página o sección que contiene el carrusel */
+body {
+  background-color: #f5f5f5; /* Aplica el mismo color si necesario */
+}
+  /* =========================
+     Cada "slide" individual
+     ========================= */
+  .carousel-slide {
+    text-align: center;    /* Centra el contenido */
+    outline: none;         /* Evita contorno al hacer clic en flechas */
+    padding: 1rem;         /* Espacio interno para estética */
+    box-sizing: border-box;
+  }
+  
+  /* =========================
+     Imagen circular
+     ========================= */
+  .carousel-img {
+    width: 280px;          /* Ajusta al tamaño deseado */
+    height: 280px;         /* Ajusta al tamaño deseado */
+    object-fit: cover;     /* Recorta la imagen sin deformarla */
+    border-radius: 50%;    /* Hace la imagen circular */
+    margin: 0 auto 1rem;   /* Centra y deja 1rem debajo para el texto */
+    display: block;        /* Bloque para que margin:auto funcione */
+    border-radius: 259px;      /* Hace la imagen más circular */
+    box-shadow: 5px 15px 15px 0px rgba(0, 0, 0, 0.5); /* Sombra personalizada */
+    object-fit: cover;         /* Asegura que la imagen no se deforme */
+    
+  }
+  
+  /* =========================
+     Texto debajo de cada imagen
+     ========================= */
+  .carousel-text {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #013358;     /* Ajusta según tu paleta */
+    margin: 0;
+  }
+  
+  /* =========================
+     Personalizar flechas
+     (si usas las que vienen en Slick)
+     ========================= */
+  .slick-arrow.slick-prev,
+  .slick-arrow.slick-next {
+    width: 50px;              /* Ancho del contenedor */
+    height: 50px;             /* Alto del contenedor */
+    background: #013358;      /* Fondo de las flechas */
+    border-radius: 50%;       /* Forma circular */
+    box-shadow: 0 4px 8px rgba(34, 26, 26, 0.5); /* Sombra */
+    z-index: 2;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+    display: flex;            /* Asegura que el contenido interno esté centrado */
+    justify-content: center;  /* Centra horizontalmente el contenido interno */
+    align-items: center;      /* Centra verticalmente el contenido interno */
+  }
+
+  /* Estilo del pseudo-elemento de las flechas */
+  .slick-arrow::before {
+    font-size: 2rem;      /* Aumenta el tamaño del símbolo */
+    color: #ffffff;       /* Cambia el color del símbolo */
+    line-height: 55px; /* Centra verticalmente */
+    display: inline-block;
+  }
+   /* Contenido interno de la flecha (los <span> con los símbolos) */
+   .slick-arrow span {
+    font-size: 30px;
+    color: #ffffff;           /* Color del símbolo */
+    display: block;           /* Asegura que se comporte como un elemento de bloque */
+    line-height: normal;      /* Elimina posibles problemas de alineación */
+  }
+  /* Ajusta la posición de las flechas */
+  .slick-prev {
+    left: -50px;
+  }
+  .slick-next {
+    right: -50px;
+  }
+  
+ 
+  /* Hover en flechas */
+ 
+  .slick-arrow:hover {
+    opacity: 1;
+    transition: opacity 0.2s ease; /* Only change the opacity */
+  }
+  
+
+  /* =========================
+     Personalizar dots (puntos) de Slick
+     ========================= */
+  .slick-dots {
+    bottom: -25px; /* Ajusta la posición vertical de los puntitos */
+  }
+  
+  .slick-dots li button:before {
+    font-size: 0.8rem;
+    color: #aaa; /* Color de los puntos inactivos */
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #333; /* Color de los puntos activos */
+  }
+  /* Título principal */
+.fotos-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #00324c;
+  border-bottom: 2px solid #21b5ad;
+  display: inline-block;
+}
+
+  /* =========================
+     Ajustes responsivos
+     ========================= */
+  @media (max-width: 768px) {
+    .carousel-container {
+      padding: 3rem 0;
+    }
+    .carousel-img {
+      width: 200px;
+      height: 200px;
+    }
+    .slick-prev {
+      left: -15px;
+    }
+    .slick-next {
+      right: -15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .carousel-container {
+      padding: 2rem 0;
+    }
+    .carousel-img {
+      width: 250px;
+      height: 250px;
+    }
+    /* Opcional: ocultar flechas en pantallas muy pequeñas */
+    .slick-prev,
+    .slick-next {
+      display: none !important;
+    }
+  }

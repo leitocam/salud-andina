@@ -1,0 +1,120 @@
+/* Contenedor principal del footer */
+.footer {
+    background-color: #00324c;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 5%;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Título principal */
+.footer-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    position: relative;
+    display: inline-flex; /* Cambiado a inline-flex */
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto; /* Centra el título horizontalmente */
+}
+
+/* Línea decorativa antes y después del título */
+.footer-title::before,
+.footer-title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 80px;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+.footer-title::before {
+    left: -100px;
+}
+
+.footer-title::after {
+    right: -100px;
+}
+
+/* Línea divisoria */
+.footer-divider {
+    width: 80px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 1rem auto;
+}
+
+/* Contenedor de columnas */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+/* Columnas individuales */
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-column h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #21b5ad;
+}
+
+.footer-column p,
+.footer-column li {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column a {
+    color: #89e3df;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #1a958d;
+}
+
+/* Derechos reservados */
+.footer-bottom {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #ffffff;
+    border-top: 1px solid #ffffff;
+    padding-top: 1rem;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .footer-columns {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-column {
+        margin-bottom: 1.5rem;
+    }
+}
