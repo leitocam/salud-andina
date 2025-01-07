@@ -7,7 +7,7 @@ const Hero = () => {
         <section className="hero" style={{ backgroundImage: `url(${backgroundImage})` }}>
             <div className="hero-content">
                 <div className="hero-text-box">
-                    <h1 className="hero-title">En Bolivia desde 2001</h1>
+                    <h1 className="hero-title">En Bolivia desde 2020</h1>
                     <p className="hero-description">
                         Trabajando juntos para mejorar la calidad de vida en las comunidades
                         a través de programas de salud, educación y desarrollo comunitario.

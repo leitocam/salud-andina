@@ -16,6 +16,7 @@
   top: 0;
   left: 0;
   z-index: 1; /* Asegura que esté detrás del texto */
+  border-radius: 10px; /* Añade bordes redondeados */
   width: 100%; /* Ocupará todo el ancho del contenedor */
   height: 100%; /* Ocupará todo el alto del contenedor */
   opacity: 1; /* Aumenta la transparencia */
@@ -23,6 +24,7 @@
   justify-content: center; /* Centra la imagen horizontalmente */
   align-items: center; /* Centra la imagen verticalmente */
   overflow: hidden;
+  
 }
 
 .quienes-somos-image::after {
@@ -36,6 +38,8 @@
     background-color: rgba(0, 0, 0, 0.35); /* Overlay oscuro */
     z-index: 1; /* Debe estar encima de la imagen pero detrás del texto */
     pointer-events: none; /* Asegura que el overlay no interfiera con clics */
+    border-radius: 10px; /* Añade bordes redondeados a la imagen */
+
      
 }
 
@@ -44,6 +48,7 @@
   height: 100%; /* Reduce the height to make the image less tall */
   object-fit: cover; /* Ajusta la imagen sin deformarla */
   z-index: 0; /* Ensure the image is behind the overlay */
+  border-radius: 10px; /* Añade bordes redondeados a la imagen */
 }
 
 /* Contenido textual */

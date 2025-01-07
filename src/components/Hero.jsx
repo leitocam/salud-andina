@@ -5,6 +5,10 @@ import './Hero.css';
 import heroBackground from '../assets/hero-background.jpg';
 
 const Hero = () => {
+  const scrollToCarousel = () => {
+    document.getElementById('carousel-section').scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section
       className="hero-container"
@@ -19,7 +23,7 @@ const Hero = () => {
           Bienvenidos a Salud Andina en Acción, donde trabajamos de corazón para construir una sociedad más justa y saludable. Nos enfocamos en brindar educación, apoyo y servicios integrales en salud sexual y reproductiva, asegurándonos de que nadie se quede atrás. ¡Juntos hacemos la diferencia!
         </p>
         {/* Botón “Descubre” */}
-        <Button />
+        <Button onClick={scrollToCarousel} />
       </div>
     </section>
   );

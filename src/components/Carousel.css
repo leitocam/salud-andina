@@ -5,7 +5,7 @@
     width: 90%;      /* Ajusta según necesites */
     margin: 0 auto;  /* Centra horizontalmente */
     position: relative;
-    padding: 7rem 0;/* Increased padding for top and bottom */
+    padding: 7rem 0 10rem; /* Increased bottom padding */
     background-color: #f5f5f5;
   }
   /* Opcional: Fondo de toda la página o sección que contiene el carrusel */
@@ -33,7 +33,7 @@ body {
     margin: 0 auto 1rem;   /* Centra y deja 1rem debajo para el texto */
     display: block;        /* Bloque para que margin:auto funcione */
     border-radius: 259px;      /* Hace la imagen más circular */
-    box-shadow: 5px 15px 15px 0px rgba(0, 0, 0, 0.5); /* Sombra personalizada */
+    box-shadow: 5px 15px 15px 0px rgba(0, 0, 0, 0.2); /* Sombra personalizada */
     object-fit: cover;         /* Asegura que la imagen no se deforme */
     
   }
@@ -58,7 +58,7 @@ body {
     height: 50px;             /* Alto del contenedor */
     background: #013358;      /* Fondo de las flechas */
     border-radius: 50%;       /* Forma circular */
-    box-shadow: 0 4px 8px rgba(34, 26, 26, 0.5); /* Sombra */
+    box-shadow: 0 4px 8px rgba(34, 26, 26, 0.2); /* Sombra */
     z-index: 2;
     opacity: 0.9;
     transition: all 0.3s ease;

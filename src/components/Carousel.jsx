@@ -32,7 +32,7 @@ const data = [
   { src: Im6, title: 'Talleres interactivos con enfoque en métodos de planificación familiar para la comunidad.' },
   { src: Im7, title: 'Representación creativa de métodos anticonceptivos en eventos educativos comunitarios.' },
   { src: Im8, title: 'Promoción de salud sexual inclusiva con actividades que generan impacto y conciencia social.' },
-  { src: Im9, title: 'Equipo médico brindando servicios especializados en salud sexual y reproductiva' },
+  { src: Im9, title: 'Talleres de concientización en comunidades indigenas, promoviendo la salud sexual reproductiva.' },
   { src: Im10, title: 'Atención personalizada y cuidado en clínicas rurales, centrados en la salud y bienestar de las comunidades.' },
   { src: Im11, title: 'Profesionales comprometidos en la gestión de datos para mejorar los servicios y garantizar un trato integral.' },
   { src: Im12, title: 'Niño en un entorno rural que refleja los retos diarios y la importancia de llevar ayuda directa a los hogares.' }
@@ -71,7 +71,7 @@ const Carousel = () => {
   }
 
   return (
-    <div className="carousel-container">
+    <div id="carousel-section" className="carousel-container">
       <h2 className="fotos-title">Historias en Acción</h2>
       <Slider {...settings}>
         {data.map((item, idx) => (

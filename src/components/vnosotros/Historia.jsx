@@ -28,6 +28,20 @@ const Historia = () => {
             descripcion: 'Fuimos reconocidos por nuestras iniciativas innovadoras.',
             imagen: historia1,
         },
+        {
+            id: 4,
+            fecha: '1980',
+            titulo: 'Reconocimiento global',
+            descripcion: 'Fuimos reconocidos por nuestras iniciativas innovadoras.',
+            imagen: historia1,
+        },
+        {
+            id: 5,
+            fecha: '1980',
+            titulo: 'Reconocimiento global',
+            descripcion: 'Fuimos reconocidos por nuestras iniciativas innovadoras.',
+            imagen: historia1,
+        },
     ];
 
     const handleImageClick = (imagen) => {

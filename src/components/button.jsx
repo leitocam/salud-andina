@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-const Button = () => {
+const Button = ({ onClick }) => {
   return (
     <StyledWrapper>
-      <button className="button">
+      <button className="button" onClick={onClick}>
         <p className="button__text">
           <span style={{ "--index": 0 }}>D</span>
           <span style={{ "--index": 1 }}>E</span>

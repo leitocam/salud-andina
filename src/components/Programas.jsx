@@ -2,12 +2,6 @@ import './Programas.css';
 
 const programasData = [
   {
-    titulo: "Comunidades Vulnerables",
-    descripcion:
-      "Trabajamos para garantizar el acceso a servicios de salud sexual y reproductiva adaptados a las necesidades de comunidades rurales, indígenas, y otros grupos que enfrentan barreras sociales, económicas y geográficas.",
-    link: "/comunidades-vulnerables",
-  },
-  {
     titulo: "Adolescentes",
     descripcion:
       "Ofrecemos educación sexual integral, prevención de ITS, acceso a métodos anticonceptivos seguros, y orientación personalizada para promover relaciones saludables y equitativas.",
@@ -18,6 +12,12 @@ const programasData = [
     descripcion:
       "Promovemos servicios de salud accesibles, respetuosos e inclusivos, adaptados a las necesidades específicas de personas con discapacidades físicas, sensoriales, intelectuales o mentales.",
     link: "/personas-con-discapacidad",
+  },
+  {
+    titulo: "Comunidades Vulnerables",
+    descripcion:
+      "Trabajamos para garantizar el acceso a servicios de salud sexual y reproductiva adaptados a las necesidades de comunidades rurales, indígenas, y otros grupos que enfrentan barreras sociales, económicas y geográficas.",
+    link: "/comunidades-vulnerables",
   },
 ];
 

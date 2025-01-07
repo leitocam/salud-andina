@@ -10,19 +10,20 @@ const Impacto = () => {
         const handleScroll = () => {
             const section = document.querySelector('.impacto');
             const rect = section.getBoundingClientRect();
-            if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+            if (rect.top < window.innerHeight && rect.bottom >= 0) {
                 setInView(true);
             }
         };
 
         window.addEventListener('scroll', handleScroll);
+        handleScroll(); // Check if already in view on mount
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
     const stats = [
-        { id: 1, icon: <FaUsers />, value: 5000, label: 'Beneficiarios' },
-        { id: 2, icon: <FaHandsHelping />, value: 120, label: 'Voluntarios' },
-        { id: 3, icon: <FaGlobe />, value: 15, label: 'Comunidades' },
+        { id: 1, icon: <FaUsers />, value: 5000, label: 'Beneficiarios ' },
+        { id: 2, icon: <FaHandsHelping />, value: 120, label: 'Voluntarios ' },
+        { id: 3, icon: <FaGlobe />, value: 300, label: 'Comunidades Alcanzadas' },
     ];
 
     return (
@@ -40,6 +41,7 @@ const Impacto = () => {
                                 duration={2.5}
                                 separator=","
                                 className="impacto-number"
+                                suffix="+"
                             />
                         )}
                         <p className="impacto-label">{stat.label}</p>

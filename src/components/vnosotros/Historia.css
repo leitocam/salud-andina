@@ -134,4 +134,9 @@
     .historia-imagen {
         margin-top: 1rem;
     }
+
+    .historia-line,
+    .historia-point {
+        display: none;
+    }
 }
