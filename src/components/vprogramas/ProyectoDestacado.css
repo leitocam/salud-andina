@@ -1,0 +1,126 @@
+/* Estilo general de la sección */
+.proyecto-destacado {
+    background-color: #f9f9f9;
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 4rem;
+}
+
+/* Diseño en grid para texto e imagen */
+.proyecto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+}
+
+/* Estilo del contenido textual */
+.proyecto-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: left;
+    padding: 1rem;
+}
+
+.proyecto-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00324c;
+    margin-bottom: 1rem;
+}
+
+.proyecto-description {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.proyecto-list {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    color: #00324c;
+    margin: 1rem 0;
+}
+
+.proyecto-list li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* Botón de acción */
+.proyecto-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #00796b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.proyecto-button:hover {
+    background-color: #005b4f;
+    transform: scale(1.05);
+}
+
+/* Estilo de la imagen */
+.proyecto-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proyecto-image {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.proyecto-image:hover {
+    transform: scale(1.05);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .proyecto-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .proyecto-content {
+        padding: 0;
+    }
+
+    .proyecto-title {
+        font-size: 2rem;
+    }
+
+    .proyecto-description {
+        font-size: 1rem;
+    }
+
+    .proyecto-list {
+        padding-left: 1rem;
+    }
+
+    .proyecto-button {
+        font-size: 0.9rem;
+        padding: 0.7rem 1.2rem;
+    }
+
+    .proyecto-image {
+        width: 100%;
+        height: auto;
+    }
+}

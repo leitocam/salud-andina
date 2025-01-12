@@ -1,0 +1,97 @@
+/* Sección general */
+.servicios {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.servicios-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00324c;
+    margin-bottom: 1rem;
+}
+
+.servicios-description {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+/* Grid de servicios */
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Tarjetas */
+.servicio-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transform: perspective(1000px) rotateX(calc((var(--mouse-y, 0) - 50%) / 50 * 5deg)) rotateY(calc((var(--mouse-x, 0) - 50%) / 50 * 5deg));
+}
+
+.servicio-card.hovered {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Ícono o imagen */
+.servicio-icono {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.servicio-icono img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.servicio-card.hovered .servicio-icono img {
+    transform: rotate(10deg) scale(1.1); /* Rotación y escalado */
+}
+
+/* Texto */
+.servicio-titulo {
+    font-size: 1.5rem;
+    color: #00324c;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.servicio-descripcion {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+.servicio-card.hovered .servicio-descripcion {
+    color: #00324c;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .servicio-card {
+        padding: 1.5rem;
+    }
+
+    .servicio-icono img {
+        width: 80px;
+        height: 80px;
+    }
+}

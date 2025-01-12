@@ -48,6 +48,15 @@
     color: var(--color-hover); /* Cambia al color definido en --color-hover */
   }
   
+  /* Botón de menú para dispositivos pequeños */
+  .header__menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--color-white);
+    font-size: 2rem;
+    cursor: pointer;
+  }
   
   /* Navegación */
   .header__nav {
@@ -111,56 +120,54 @@
       margin-top: 1rem;
       width: 100%;
       justify-content: space-between;
+      display: none;
+      flex-direction: column;
+    }
+  
+    .header__nav--open {
+      display: flex;
     }
   
     .header__nav-list {
       gap: 1rem;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .header__nav-list a {
+      font-size: 1rem; /* Reducir el tamaño del texto */
+      font-size: 1.2rem;
+      padding: 0.5rem 0;
+      text-align: center;
+      width: 100%;
     }
   
     .header__donar-btn {
-      margin-left: 0;
+      font-size: 1rem; /* Reducir el tamaño del texto */
+      padding: 0.4rem 0.8rem; /* Reducir el relleno interno */
+      border-radius: 3px; /* Hacer los bordes más redondeados */
+      margin-left: 0; /* Eliminar el margen adicional */
+      width: 100%;
+      text-align: center;
+      margin: 1rem 0 0 0;
+    }
+  
+    .header__menu-toggle {
+      display: block;
     }
   }
-
-/* Ajustes para pantallas pequeñas */
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
+  
+  /* Ajustes adicionales para pantallas muy pequeñas (como teléfonos compactos) */
+  @media (max-width: 480px) {
+    .header__nav-list a {
+      font-size: 0.95rem; /* Reducir un poco más el tamaño del texto */
+      font-size: 1rem;
+    }
+  
+    .header__donar-btn {
+      font-size: 0.95rem; /* Reducir el texto del botón */
+      padding: 0.3rem 0.6rem; /* Reducir aún más el relleno interno */
+      font-size: 1rem;
+      padding: 0.4rem 0.8rem;
+    }
   }
-
-  .header__nav {
-    margin-top: 1rem;
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .header__nav-list {
-    gap: 1rem;
-  }
-
-  /* Ajustar los enlaces del menú */
-  .header__nav-list a {
-    font-size: 1rem; /* Reducir el tamaño del texto */
-  }
-
-  /* Ajustar el botón “Donar” */
-  .header__donar-btn {
-    font-size: 1rem; /* Reducir el tamaño del texto */
-    padding: 0.4rem 0.8rem; /* Reducir el relleno interno */
-    border-radius: 3px; /* Hacer los bordes más redondeados */
-    margin-left: 0; /* Eliminar el margen adicional */
-  }
-}
-
-/* Ajustes adicionales para pantallas muy pequeñas (como teléfonos compactos) */
-@media (max-width: 480px) {
-  .header__nav-list a {
-    font-size: 0.95rem; /* Reducir un poco más el tamaño del texto */
-  }
-
-  .header__donar-btn {
-    font-size: 0.95rem; /* Reducir el texto del botón */
-    padding: 0.3rem 0.6rem; /* Reducir aún más el relleno interno */
-  }
-}

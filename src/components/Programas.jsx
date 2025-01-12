@@ -4,27 +4,27 @@ const programasData = [
   {
     titulo: "Adolescentes",
     descripcion:
-      "Ofrecemos educación sexual integral, prevención de ITS, acceso a métodos anticonceptivos seguros, y orientación personalizada para promover relaciones saludables y equitativas.",
-    link: "/adolescentes",
+      "Desarrollamos programas de salud sexual y reproductiva para adolescentes, abordando temas como educación sexual, prevención de enfermedades de transmisión sexual (ETS), planificación familiar y promoción de la salud integral.",
+    link: "/programa",
   },
   {
     titulo: "Personas con Discapacidad",
     descripcion:
       "Promovemos servicios de salud accesibles, respetuosos e inclusivos, adaptados a las necesidades específicas de personas con discapacidades físicas, sensoriales, intelectuales o mentales.",
-    link: "/personas-con-discapacidad",
+    link: "/programa",
   },
   {
     titulo: "Comunidades Vulnerables",
     descripcion:
       "Trabajamos para garantizar el acceso a servicios de salud sexual y reproductiva adaptados a las necesidades de comunidades rurales, indígenas, y otros grupos que enfrentan barreras sociales, económicas y geográficas.",
-    link: "/comunidades-vulnerables",
+    link: "/programa",
   },
 ];
 
 const extrasData = [
   {
     titulo: "Contenido Educativo",
-    descripcion: "Accede a materiales educativos diseñados para comunidades.",
+    descripcion: "Accede a materiales educativos diseñados para comunidades. Orientación gratuita y de calidad.",
     icono: "📄",
     link: "/contenido-educativo",
   },

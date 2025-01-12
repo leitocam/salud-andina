@@ -74,8 +74,9 @@
 /* Subtítulos */
 .quienes-somos-content h3 {
   font-size: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 2rem; /* Increase margin-top to add more space */
   margin-bottom: 0.5rem;
+  
 }
 
 /* Texto */
@@ -124,8 +125,12 @@
   .quienes-somos-content h2 {
       font-size: 2rem;
   }
+  .quienes-somos-content h3 {
+    text-align: left; /* Ensure text is centered on mobile */
+}
 
   .quienes-somos-content p {
       font-size: 0.9rem;
+      text-align: center; /* Ensure text is centered on mobile */
   }
 }

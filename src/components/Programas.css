@@ -70,11 +70,13 @@
 
 .extra-card {
   background: #f9f9f9;
+  font-size: 2rem; /* Adjust the size as needed */
   border: 1px solid #ddd;
   border-radius: 10px;
-  padding: 20px;
+  padding: 50px;
   cursor: pointer;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  
 }
 
 .extra-card:hover {
@@ -91,4 +93,8 @@
 .extra-card p {
   font-size: 1rem;
   color: #666;
+}
+
+.extra-card span {
+  font-size: 1.5rem; /* Adjust the size as needed */
 }
