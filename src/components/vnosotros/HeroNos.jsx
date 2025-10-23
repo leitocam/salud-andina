@@ -7,10 +7,24 @@ const Hero = () => {
         <section className="hero" style={{ backgroundImage: `url(${backgroundImage})` }}>
             <div className="hero-content">
                 <div className="hero-text-box">
-                    <h1 className="hero-title">En Bolivia desde 2020</h1>
+                    <h1 className="hero-title">¿Quiénes somos?</h1>
                     <p className="hero-description">
-                        Trabajando juntos para mejorar la calidad de vida en las comunidades
-                        a través de programas de salud, educación y desarrollo comunitario.
+                    Somos una organización sin fines
+                    de lucro dedicada a promover la
+                    salud sexual y reproductiva, con un
+                    firme compromiso hacia las
+                    poblaciones que enfrentan mayores
+                    desafíos para acceder a servicios
+                    de calidad. Desde 2020,
+                    trabajamos en Bolivia para
+                    mejorar la calidad de vida en las
+                    comunidades, desarrollando
+                    programas de salud, educación y
+                    fortalecimiento comunitario.
+                    Impulsamos los derechos humanos,
+                    contribuyendo a que cada persona
+                    pueda vivir con dignidad,
+                    autonomía y bienestar.
                     </p>
                 </div>
             </div>
