@@ -43,7 +43,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
       {/* Derechos reservados */}
       <div className="footer-bottom">
         <p>{new Date().getFullYear()} Salud Andina En Acción - Todos los Derechos Reservados</p>
