@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Historia.css';
 import creacion from '../../assets/Creacion.jpg';
+import Expansion from '../../assets/Expansion.jpg';
 import historia1 from '../../assets/Historia1.png'; // Puedes reemplazar la imagen por las adecuadas para cada evento.
 import Recono from '../../assets/Recono.jpg'; // Puedes reemplazar la imagen por las adecuadas para cada evento.
 import Convenio from '../../assets/Convenio.jpg'; // Puedes reemplazar la imagen por las adecuadas para cada evento.
@@ -20,7 +21,7 @@ const Historia = () => {
         },
         {
             id: 2,
-            fecha: '2021',
+            fecha: '2020',
             titulo: 'Inicio del primer proyecto',
             descripcion: 'Comenzamos nuestro primer proyecto en el Norte de Potosí y Cochabamba, enfocándonos en salud y educación.',
             imagen: Prim,
@@ -37,13 +38,20 @@ const Historia = () => {
             fecha: 'Junio 2022',
             titulo: 'Expansión Nacional del Proyecto',
             descripcion: 'Extendimos nuestras iniciativas a Chuquisaca, Oruro y Santa Cruz, alcanzando a más familias y comunidades.',
-            imagen: historia1,
+            imagen: Expansion,
         },
         {
             id: 5,
             fecha: '2023',
             titulo: 'Convenio con el GAM Santivañez',
             descripcion: 'Firmamos un convenio con el Gobierno Autónomo Municipal de Santivañez para fortalecer nuestros proyectos en la región.',
+            imagen: Convenio,
+        },
+        {
+            id: 6,
+            fecha: '2024',
+            titulo: 'Convenio de Asociación con Distritales de Educación Municipales',
+            descripcion: 'Realizamos un trabajo conjunto con los municipios de san pedro , sacaca toro toro y arampampa para realizar talleres educativos en salud sexual reproductiva',
             imagen: Convenio,
         },
     ];

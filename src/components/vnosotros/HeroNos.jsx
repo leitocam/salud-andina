@@ -9,22 +9,22 @@ const Hero = () => {
                 <div className="hero-text-box">
                     <h1 className="hero-title">¿Quiénes somos?</h1>
                     <p className="hero-description">
-                    Somos una organización sin fines
-                    de lucro dedicada a promover la
-                    salud sexual y reproductiva, con un
+                    Somos una <strong>organización sin fines
+                    de lucro</strong> dedicada a promover la
+                    <strong>salud sexual y reproductiva</strong>, con un
                     firme compromiso hacia las
                     poblaciones que enfrentan mayores
-                    desafíos para acceder a servicios
-                    de calidad. Desde 2020,
-                    trabajamos en Bolivia para
-                    mejorar la calidad de vida en las
+                    desafíos para acceder a <strong>servicios
+                    de calidad</strong>. Desde <strong>2020</strong>,
+                    trabajamos en <strong>Bolivia</strong> para
+                    mejorar la <strong>calidad de vida</strong> en las
                     comunidades, desarrollando
-                    programas de salud, educación y
-                    fortalecimiento comunitario.
-                    Impulsamos los derechos humanos,
+                    programas de <strong>salud, educación</strong> y
+                    <strong>fortalecimiento comunitario</strong>.
+                    Impulsamos los <strong>derechos humanos</strong>,
                     contribuyendo a que cada persona
-                    pueda vivir con dignidad,
-                    autonomía y bienestar.
+                    pueda vivir con <strong>dignidad,
+                    autonomía y bienestar</strong>.
                     </p>
                 </div>
             </div>
