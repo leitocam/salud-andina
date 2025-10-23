@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaWhatsapp, FaLock } from "react-icons/fa";
+import Footer from './Footer'; // Importar el componente Footer
 
 const App = () => {
   const [formData, setFormData] = useState({
@@ -147,7 +148,7 @@ const App = () => {
           Dejanos cualquier consulta o duda que tengas.
         </h1>
         <a
-          href="https://wa.me/1234567890"
+          href="https://wa.me/59174140597?text=necesito%20ayuda"
           target="_blank"
           rel="noopener noreferrer"
           style={{
@@ -323,6 +324,7 @@ const App = () => {
           onClick={() => setShowOverlay(true)}
         />
       </div>
+      <Footer /> {/* Añadir el componente Footer al final */}
     </div>
   );
 };

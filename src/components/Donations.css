@@ -1,0 +1,127 @@
+/* Contenedor principal */
+.donations-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Títulos y descripciones */
+  .donations-title {
+    font-size: 2.5rem;
+    color: #006064;
+    margin-bottom: 1rem;
+  }
+  
+  .donations-description {
+    font-size: 1.2rem;
+    color: #00796b;
+    margin-bottom: 2rem;
+  }
+  
+  /* Botones de opciones */
+  .donations-options {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .donation-option {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: 2px solid #00838f;
+    border-radius: 8px;
+    background-color: #e0f7fa;
+    color: #006064;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .donation-option.active {
+    background-color: #00838f;
+    color: #ffffff;
+  }
+  
+  .donation-option:hover {
+    background-color: #00acc1;
+    color: #ffffff;
+  }
+  
+  /* Contenido de las secciones */
+  .donations-content {
+    margin-top: 2rem;
+    padding: 2rem; /* Añadir padding para más borde */
+  }
+  
+  .bolivia-donation, .international-donation {
+    text-align: center;
+    padding: 1rem;
+    background: #e0f2f1;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Detalles de Bolivia */
+  .bolivia-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 600px) {
+    .bolivia-details {
+      flex-direction: column;
+    }
+  }
+  
+  .account-details p {
+    font-size: 1.1rem;
+    color: #004d40;
+    margin: 0.5rem 0;
+  }
+  
+  .qr-container {
+    text-align: center;
+  }
+  
+  .qr-code {
+    width: 150px;
+    height: 150px;
+    border: 4px solid #004d40;
+    border-radius: 8px;
+  }
+  
+  /* Botón de WhatsApp para donaciones */
+  .donation-whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    background-color: #ffffff;
+    color: #00d668;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .donation-whatsapp-button:hover {
+    background-color: #aef3eb;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .donation-whatsapp-button .icon {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+  }
+

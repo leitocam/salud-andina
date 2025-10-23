@@ -36,7 +36,7 @@ const Header = () => {
                     <li><Link to="/ayuda">Ayuda</Link></li>
                     <li><Link to="/orientacion-gratuita">Orientación Gratuita</Link></li>
                 </ul>
-                <a href="#donar" className="header__donar-btn">Donar</a>
+                <Link to="/donaciones" className="header__donar-btn">Donar</Link>
             </nav>
         </header>
     );

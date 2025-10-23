@@ -1,0 +1,17 @@
+.section-title {
+    font-size: 2.5em;
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 40px; /* Añade más distancia arriba */
+    margin-bottom: 40px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

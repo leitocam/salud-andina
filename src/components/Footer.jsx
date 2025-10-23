@@ -22,7 +22,7 @@ const Footer = () => {
           <div className="footer-column">
             <h3>REDES SOCIALES</h3>
             <ul>
-              <li><a href="#whatsapp">WhatsApp</a></li>
+              <li><a href="https://wa.me/59174140597" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
               <li><a href="#instagram">Instagram</a></li>
               <li><a href="#facebook">Facebook</a></li>
               <li><a href="#tiktok">TikTok</a></li>
@@ -32,7 +32,7 @@ const Footer = () => {
           {/* Visítanos */}
           <div className="footer-column">
             <h3>VISÍTANOS</h3>
-            <p>Calle Reza N°. 250 entre Junín y Hamiraya </p>
+            <p>Calle Colombia N° 576 Piso 3 Oficina 4 entre San Martin y Lanza </p>
             <p>Cochabamaba - Bolivia  </p>
           </div>
 
@@ -46,7 +46,7 @@ const Footer = () => {
 
       {/* Derechos reservados */}
       <div className="footer-bottom">
-        <p>2024 Salud Andina En Acción - Todos los Derechos Reservados</p>
+        <p>{new Date().getFullYear()} Salud Andina En Acción - Todos los Derechos Reservados</p>
       </div>
     </footer>
   );

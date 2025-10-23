@@ -4,7 +4,7 @@ import Impacto from "./vnosotros/Impacto";
 import MisionVision from "./vnosotros/MisionVision";
 import Historia from "./vnosotros/Historia";
 import Equipo from "./vnosotros/Equipo";
-import Footer from "./Footer"; // Corrige la dirección de importación
+import Footer from "./Footer"; 
 
 const Nosotros = () => {
     return (

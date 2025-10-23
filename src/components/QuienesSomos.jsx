@@ -17,9 +17,9 @@ const QuienesSomos = () => {
         <p>
         "Promover y garantizar el ejercicio pleno de los derechos sexuales y reproductivos de las comunidades vulnerables, adolescentes y personas con discapacidad...
         <button className="quienes-somos-button">
-          <Link to="/nosotros#mision-vision" onClick={() => {
+          <Link to="/nosotros#mision" onClick={() => {
               setTimeout(() => {
-                  document.getElementById('mision-vision').scrollIntoView({ behavior: 'smooth' });
+                  document.getElementById('mision').scrollIntoView({ behavior: 'smooth' });
               }, 100);
           }}>Ver Más</Link>
         </button>
@@ -29,9 +29,9 @@ const QuienesSomos = () => {
         <p>
         "Ser líderes en la provisión de servicios de salud sexual y reproductiva y planificación familiar...                              
         <button className="quienes-somos-button">
-          <Link to="/nosotros#mision-vision" onClick={() => {
+          <Link to="/nosotros#vision" onClick={() => {
               setTimeout(() => {
-                  document.getElementById('mision-vision').scrollIntoView({ behavior: 'smooth' });
+                  document.getElementById('vision').scrollIntoView({ behavior: 'smooth' });
               }, 100);
           }}>Ver Más</Link>
         </button>

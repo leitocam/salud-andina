@@ -12,6 +12,7 @@ import Programa from "./components/Programa"; // Ensure correct import path
 import HelpPage from "./components/HelpPage"; // Ensure correct import path
 import Nosotros from "./components/Nosotros"; // Importar el nuevo componente
 import OrientacionGratuita from "./components/OrientacionGratuita"; // Importar el nuevo componente
+import Donations from "./components/Donations"; // Import Donations component
 
 function App() {
     return (
@@ -39,6 +40,7 @@ function App() {
                 <Route path="/programa" element={<Programa />} /> {/* Ensure correct path */}
                 <Route path="/ayuda" element={<HelpPage />} />
                 <Route path="/orientacion-gratuita" element={<OrientacionGratuita />} />
+                <Route path="/donaciones" element={<Donations />} /> {/* Add new route for Donations */}
             </Routes>
         </Router>
     );

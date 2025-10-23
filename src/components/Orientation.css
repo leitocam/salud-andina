@@ -1,0 +1,191 @@
+.orientationWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f4f8;
+}
+
+.orientationContainer {
+  font-family: "Arial", sans-serif;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.categorySelector,
+.subcategorySelector {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.categorySelector button,
+.subcategorySelector button {
+  background-color: #e0f7fa;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  animation: buttonFadeIn 0.5s ease-in-out;
+}
+
+.categorySelector button.active,
+.subcategorySelector button.active {
+  background-color: #00acc1;
+  color: white;
+}
+
+.infoSection {
+  text-align: center; /* Change from left to center */
+  padding: 20px;
+}
+
+.methodSelector {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.methodSelector button {
+  background-color: #b2ebf2;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  animation: buttonFadeIn 0.5s ease-in-out;
+}
+
+.methodSelector button.active {
+  background-color: #00acc1;
+  color: white;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #e0f7fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center; /* Change from left to center */
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 auto; /* Center the card horizontally */
+  animation: cardFadeIn 0.5s ease-in-out;
+}
+
+.card.selected {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  animation: cardSelected 0.3s ease-in-out;
+}
+
+.card h3 {
+  font-size: 18px;
+  color: #00796b;
+}
+
+.card p {
+  font-size: 14px;
+  color: #004d40;
+}
+
+.icon {
+  font-size: 24px;
+  color: #00796b;
+  margin-bottom: 10px;
+}
+
+.tipsSection {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.tipsSection h4 {
+  font-size: 16px;
+  color: #00796b;
+  margin-bottom: 10px;
+}
+
+.tipsSection ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.tipsSection li {
+  font-size: 14px;
+  color: #004d40;
+  margin-bottom: 5px;
+}
+
+@keyframes buttonFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes cardSelected {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+@media (max-width: 768px) {
+  .orientationContainer {
+    padding: 10px;
+    width: 100%; /* Ensure the container takes full width */
+  }
+
+  .categorySelector,
+  .subcategorySelector,
+  .methodSelector {
+    flex-direction: column; /* Stack buttons vertically */
+  }
+
+  .categorySelector button,
+  .subcategorySelector button,
+  .methodSelector button {
+    width: 100%; /* Make buttons full width */
+    margin: 5px 0; /* Adjust margin for better spacing */
+  }
+
+  .card {
+    width: 100%;
+    margin: 10px 0; /* Adjust margin for better spacing on small screens */
+  }
+}

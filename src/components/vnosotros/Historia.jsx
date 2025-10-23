@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import './Historia.css';
-import historia1 from '../../assets/Historia1.png';
+import creacion from '../../assets/Creacion.jpg';
+import historia1 from '../../assets/Historia1.png'; // Puedes reemplazar la imagen por las adecuadas para cada evento.
+import Recono from '../../assets/Recono.jpg'; // Puedes reemplazar la imagen por las adecuadas para cada evento.
+import Convenio from '../../assets/Convenio.jpg'; // Puedes reemplazar la imagen por las adecuadas para cada evento.
+import Prim from '../../assets/PrimerP.jpg'; // Puedes reemplazar la imagen por las adecuadas para cada evento.
 import Modal from './Modal'; // Modal para mostrar imágenes grandes
 
 const Historia = () => {
@@ -9,38 +13,38 @@ const Historia = () => {
     const eventos = [
         {
             id: 1,
-            fecha: '1950',
-            titulo: 'Inicio de nuestras actividades',
-            descripcion: 'Comenzamos nuestro camino con un enfoque en la salud comunitaria.',
-            imagen: historia1,
+            fecha: '2020',
+            titulo: 'Creación de la ONG',
+            descripcion: 'Fundamos nuestra organización con la misión de mejorar la calidad de vida en las comunidades más necesitadas.',
+            imagen: creacion,
         },
         {
             id: 2,
-            fecha: '1954',
-            titulo: 'Expansión internacional',
-            descripcion: 'Llegamos a nuevos países con proyectos sostenibles.',
-            imagen: historia1,
+            fecha: '2021',
+            titulo: 'Inicio del primer proyecto',
+            descripcion: 'Comenzamos nuestro primer proyecto en el Norte de Potosí y Cochabamba, enfocándonos en salud y educación.',
+            imagen: Prim,
         },
         {
             id: 3,
-            fecha: '1980',
-            titulo: 'Reconocimiento global',
-            descripcion: 'Fuimos reconocidos por nuestras iniciativas innovadoras.',
-            imagen: historia1,
+            fecha: 'Enero 2022',
+            titulo: 'Reconocimiento de comunidades por servicio',
+            descripcion: 'Recibimos un reconocimiento especial por parte de las comunidades por nuestro compromiso y trabajo social.',
+            imagen: Recono,
         },
         {
             id: 4,
-            fecha: '1980',
-            titulo: 'Reconocimiento global',
-            descripcion: 'Fuimos reconocidos por nuestras iniciativas innovadoras.',
+            fecha: 'Junio 2022',
+            titulo: 'Expansión Nacional del Proyecto',
+            descripcion: 'Extendimos nuestras iniciativas a Chuquisaca, Oruro y Santa Cruz, alcanzando a más familias y comunidades.',
             imagen: historia1,
         },
         {
             id: 5,
-            fecha: '1980',
-            titulo: 'Reconocimiento global',
-            descripcion: 'Fuimos reconocidos por nuestras iniciativas innovadoras.',
-            imagen: historia1,
+            fecha: '2023',
+            titulo: 'Convenio con el GAM Santivañez',
+            descripcion: 'Firmamos un convenio con el Gobierno Autónomo Municipal de Santivañez para fortalecer nuestros proyectos en la región.',
+            imagen: Convenio,
         },
     ];
 

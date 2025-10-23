@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick-theme.css'
 import './Carousel.css'
 import Im1 from '../assets/carru/Im1.jpg'
 import Im2 from '../assets/carru/Im2.jpg'
-import Im3 from '../assets/carru/Im3.jpg'
+//import Im3 from '../assets/carru/Im3.jpg'
 import Im4 from '../assets/carru/Im4.jpg'
 import Im5 from '../assets/carru/Im5.jpg'
 import Im6 from '../assets/carru/Im6.jpg'
@@ -26,21 +26,20 @@ import Im15 from '../assets/carru/Im15.png'
 
 
 const data = [
-  { src: Im1, title: 'Campaña de Orientación y consejería en centros de atención comunitaria.' },
-  { src: Im2, title: 'Apoyo integral a personas en entornos rurales, ofreciendo cuidado y atención personalizada.' },
-  { src: Im3, title: 'Trabajo de transporte en coordinación al Ministerio de Salud .' },
-  { src: Im4, title: 'Orientación educativa personalizada para promover derechos y salud sexual en comunidades vulnerables.' },
-  { src: Im5, title: 'Consejeria y orientación en salud sexual y reproductiva dentro de la comunidad.' },
-  { src: Im6, title: 'Visitas domiciliarias del equipo voluntario para brindar enseñanza y apoyo en salud sexual.' },
-  { src: Im7, title: 'Charalas a grupos de mujeres en comunidades rurales.' },
-  { src: Im8, title: 'Sesión educativa para jovenes y adolescentes en unidades educativas rurales.' },
-  { src: Im9, title: 'Talleres de concientización en comunidades indigenas, promoviendo la salud sexual reproductiva.' },
-  { src: Im10, title: 'Atención personalizada y cuidado en clínicas rurales, centrados en la salud y bienestar de las comunidades.' },
+  { src: Im1, title: 'Provisión de Información para la Toma de Decisiones Informadas en Salud Sexual y Reproductiva.' },
+  { src: Im2, title: 'Apoyo integral a personas, ofreciendo cuidado y atención personalizada.' },
+  { src: Im4, title: 'Orientación sobre Derechos Sexuales y Derechos Reproductivos.' },
+  { src: Im5, title: 'Asesoramiento y Orientación en Salud Sexual y Reproductiva en los Establecimientos de Salud del MINSA.' },
+  { src: Im6, title: 'Visitas Domiciliarias para brindar Asesoría en Salud Sexual y Reproductiva.' },
+  { src: Im7, title: 'Charlas a grupos de mujeres en comunidades rurales.' },
+  { src: Im8, title: 'Sesiones Educativas para Adolescentes en Educación Integral en Sexualidad.' },
+  { src: Im9, title: 'Talleres de Sensibilización para la Promoción de la Salud Sexual y Reproductiva.' },
+  { src: Im10, title: 'Atención Personalizada, Enfocada en la Salud y el Bienestar de las Comunidades.' },
   { src: Im11, title: 'Profesionales comprometidos en la gestión de datos para mejorar los servicios y garantizar un trato integral.' },
-  { src: Im12, title: 'Fortalecimiento del equipo de voluntarios Saea para brindar atención integral.' },
+  { src: Im12, title: 'Fortalecimiento del Equipo SAEA para la Prestación de Atención Integral en Salud Sexual.' },
   { src: Im13, title: 'Mujeres reunidas en charlas de orientación sobre salud sexual y reproductiva.' },
-  { src: Im14, title: 'Feria integral de salud en comunidades rurales.' },
-  { src: Im15, title: 'Cursillos Comunales al aire libre, por parte de voluntarios de la fundación.' }
+  { src: Im14, title: 'Ferias Integrales de Salud en Coordinación con el MINSA.' },
+  { src: Im15, title: 'Cursillos , impartiendo temas de salud sexual y reproductiva.' }
 ]
 
 const Carousel = () => {

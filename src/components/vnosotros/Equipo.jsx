@@ -1,7 +1,7 @@
 import React from 'react';
 import './Equipo.css';
 import teamMember1 from '../../assets/team1.jpg'; // Sustituye con las imágenes reales
-import teamMember2 from '../../assets/team1.jpg';
+import teamMember2 from '../../assets/team2.jpg';
 
 const Equipo = () => {
     const miembros = [
