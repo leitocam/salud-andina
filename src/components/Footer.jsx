@@ -18,18 +18,18 @@ const Footer = () => {
             <p>soporte@ongsaludandina.com</p>
           </div>
 
-          {/* Redes Sociales */}
-          <div className="footer-column">
-            <h3>REDES SOCIALES</h3>
-            <ul>
-              <li><a href="https://wa.me/59174140597" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
-              <li><a href="#instagram">Instagram</a></li>
-              <li><a href="#facebook">Facebook</a></li>
-              <li><a href="#tiktok">TikTok</a></li>
-            </ul>
-          </div>
+          /* Redes Sociales */
+                <div className="footer-column">
+                <h3>REDES SOCIALES</h3>
+                <ul>
+                  <li><a href="https://wa.me/59174140597" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+                  <li><a href="https://www.instagram.com/saludandinaenaccion">Instagram</a></li>
+                  <li><a href="https://www.facebook.com/people/Salud-Andina-En-Acci%C3%B3n/61582657107919/?mibextid=wwXIfr&rdid=AEUT3W7ZZWsKby7S&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BTPnpsWvM%2F%3Fmibextid%3DwwXIfr" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                  <li><a href="#tiktok">TikTok</a></li>
+                </ul>
+                </div>
 
-          {/* Visítanos */}
+                {/* Visítanos */}
           <div className="footer-column">
             <h3>VISÍTANOS</h3>
             <p>Calle Colombia N° 576 Piso 3 Oficina 4 entre San Martin y Lanza </p>
