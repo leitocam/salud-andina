@@ -12,17 +12,16 @@ const ProyectoDestacado = () => {
             <div className="proyecto-grid">
                 {/* Contenido textual */}
                 <div className="proyecto-content">
-                    <h2 className="proyecto-title">Proyecto Salud Sexual Reproductiva</h2>
+                    <h2 className="proyecto-title">NUESTROS PROGRAMAS</h2>
                     <p className="proyecto-description">
-                        Este proyecto tiene como objetivo mejorar la calidad de vida en comunidades 
-                        del norte de Potosí, Oruro y Cochabamba. Nos enfocamos en brindar acceso a 
-                        recursos de planificación familiar y educación en salud sexual, especialmente 
-                        en comunidades vulnerables.
+                    En Salud Andina en Acción, trabajamos por el bienestar integral de las comunidades del norte de Potosí, Oruro y Cochabamba. 
+                    Nuestros programas promueven el ejercicio de los derechos sexuales y reproductivos, la educación integral en sexualidad y el acceso equitativo a servicios de salud para adolescentes, mujeres, varones y personas con discapacidad. 
                     </p>
                     <ul className="proyecto-list">
-                        <li>Educación sobre salud sexual y reproductiva.</li>
-                        <li>Acceso a métodos anticonceptivos modernos.</li>
-                        <li>Capacitación para líderes comunitarios.</li>
+                        <li>Salud Sexual y Reproductiva</li>
+                        <li>Educación Integral en Sexualidad</li>
+                        <li>Inclusión y Discapacidad</li>
+                        <li>Fortalecimiento Comunitario</li>
                     </ul>
                     <button className="proyecto-button" onClick={scrollToProgramas}>Conoce Más</button>
                 </div>

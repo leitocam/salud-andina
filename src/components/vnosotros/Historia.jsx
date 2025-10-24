@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Historia.css';
 import creacion from '../../assets/Creacion.jpg';
 import Expansion from '../../assets/Expansion.jpg';
-import historia1 from '../../assets/Historia1.png'; // Puedes reemplazar la imagen por las adecuadas para cada evento.
+import historia24 from '../../assets/Historia-2024.jpg'; // Puedes reemplazar la imagen por las adecuadas para cada evento.
 import Recono from '../../assets/Recono.jpg'; // Puedes reemplazar la imagen por las adecuadas para cada evento.
 import Convenio from '../../assets/Convenio.jpg'; // Puedes reemplazar la imagen por las adecuadas para cada evento.
 import Prim from '../../assets/PrimerP.jpg'; // Puedes reemplazar la imagen por las adecuadas para cada evento.
@@ -52,7 +52,7 @@ const Historia = () => {
             fecha: '2024',
             titulo: 'Convenio de Asociación con Distritales de Educación Municipales',
             descripcion: 'Realizamos un trabajo conjunto con los municipios de san pedro , sacaca toro toro y arampampa para realizar talleres educativos en salud sexual reproductiva',
-            imagen: Convenio,
+            imagen: historia24,
         },
     ];
 
