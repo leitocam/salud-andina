@@ -1,0 +1,115 @@
+/* Estilos para la sección de Alianzas */
+.alianzas {
+  padding: 60px 20px;
+  background-color: #f9fafb;
+}
+
+.alianzas-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.alianzas-divider {
+  width: 72px;
+  height: 4px;
+  background-color: #06b6d4; /* acento */
+  border-radius: 999px;
+  margin: 12px auto 32px;
+}
+
+.alianzas-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* Tarjeta con borde degradado y contenido centrado */
+.alianzas-card {
+  background: linear-gradient(#ffffff, #ffffff) padding-box,
+              linear-gradient(135deg, rgba(6,182,212,0.5), rgba(59,130,246,0.5)) border-box;
+  border: 1px solid transparent;
+  border-radius: 14px;
+  padding: 22px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 14px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.alianzas-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+/* Miniatura circular con efecto glow y transición (responsive) */
+.alianzas-thumb {
+  width: clamp(64px, 9.5vw, 112px);
+  height: clamp(64px, 9.5vw, 112px);
+  border-radius: 50%;
+  background: #ffffff;
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(6, 182, 212, 0.15);
+}
+
+.alianzas-thumb::after {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 50%;
+  background: conic-gradient(from 180deg, #06b6d4, #3b82f6, #06b6d4);
+  z-index: 0;
+  filter: blur(8px);
+  opacity: 0.35;
+  transition: opacity 0.25s ease, filter 0.25s ease;
+}
+
+.alianzas-card:hover .alianzas-thumb::after {
+  opacity: 0.6;
+  filter: blur(6px);
+}
+
+.alianzas-thumb img {
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  filter: grayscale(60%) saturate(90%);
+  transform: scale(0.96);
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.alianzas-card:hover .alianzas-thumb img {
+  transform: scale(1.04);
+  filter: grayscale(0%) saturate(110%);
+}
+
+.alianzas-name {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+@media (max-width: 480px) {
+  .alianzas {
+    padding: 44px 16px;
+  }
+  .alianzas-title {
+    font-size: 1.6rem;
+  }
+  .alianzas-name {
+    font-size: 1rem;
+  }
+}

@@ -5,6 +5,7 @@ import MisionVision from "./vnosotros/MisionVision";
 import Historia from "./vnosotros/Historia";
 import Equipo from "./vnosotros/Equipo";
 import Footer from "./Footer"; 
+import Alianzas from "./vnosotros/Alianzas";
 
 const Nosotros = () => {
     return (
@@ -14,6 +15,7 @@ const Nosotros = () => {
             <Impacto />
             <Historia />
             <Equipo />
+            <Alianzas />
             <Footer />
         </>
     );
