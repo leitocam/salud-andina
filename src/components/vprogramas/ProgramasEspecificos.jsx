@@ -17,7 +17,7 @@ const programasData = [
         id: 2,
         titulo: 'Educación Integral en Sexualidad (EIS)',
         descripcionCorta: 'Buscamos fortalecer conocimientos, actitudes y valores para una vida saludable y responsable.',
-        descripcionLarga: 'Poblaciones meta: estudiantes, docentes, madres y padres de familia.\nEnfoques:\n• Sexualidad, género y derechos humanos.\n• Prevención de violencia y embarazos en adolescentes\n• Educación emocional y toma de decisiones responsables.',
+        descripcionLarga: 'Ayudamos a estudiantes, docentes, madres y padres de familia.\nEnfoques:\n• Sexualidad, género y derechos humanos.\n• Prevención de violencia y embarazos en adolescentes\n• Educación emocional y toma de decisiones responsables.',
         imagen: eis,
     },
     {
@@ -45,7 +45,7 @@ const ProgramasEspecificos = () => {
 
     return (
         <section id="programas-especificos" className="programas-especificos">
-            <h2 className="programas-title">Nuestros Programas</h2>
+            <h2 className="programas-title">Conoce cada uno de ellos </h2>
             <div className="programas-grid">
                 {programasData.map((programa) => (
                     <div
