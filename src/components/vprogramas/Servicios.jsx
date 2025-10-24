@@ -1,22 +1,46 @@
 import React, { useState } from 'react';
-import educa from '../../assets/Educacion.svg';
-import acceso from '../../assets/Acceso.svg';
+import iconSalud from '../../assets/servicios-salud-sexual.svg';
+import iconEducacion from '../../assets/servicios-educacion.svg';
+import iconInclusiva from '../../assets/servicios-inclusiva.svg';
+import iconApoyo from '../../assets/servicios-apoyo-salud.svg';
+import iconReferencia from '../../assets/servicios-referencia.svg';
 import './Servicios.css';
 
 const serviciosData = [
     {
         id: 1,
-        titulo: 'Educación en Salud Sexual Reproductiva ',
-        descripcionCorta: 'Fomentamos la educación para planifiacación familiar y prevención de enfermedades.',
-        descripcionLarga: 'Realizamos talleres, seminarios y campañas educativas para enseñar a las comunidades sobre la importancia de la prevención de enfermedades y el cuidado de su salud.',
-        icono: educa
+        titulo: 'Atención en Salud Sexual y Reproductiva',
+        descripcionCorta: 'Orientación y planificación familiar con métodos anticonceptivos modernos.',
+        descripcionLarga: 'Orientación y consejería personalizada sobre métodos anticonceptivos modernos, inserción y retiro de DIU e implantes y atención en planificación familiar.',
+        icono: iconSalud
     },
     {
         id: 2,
-        titulo: 'Acceso a recursos de prevención',
-        descripcionCorta: 'Facilitamos recursos de prevención de enfermedades sexuales.',
-        descripcionLarga: 'Ofrecemos recursos como condones, píldoras anticonceptivas, PAE, inyectables trimestrales y vasectomías con el fin de garantizar la salud sexual y reproductiva.',
-        icono: acceso 
+        titulo: 'Educación y Sensibilización',
+        descripcionCorta: 'Sesiones, talleres y charlas sobre sexualidad, género y derechos.',
+        descripcionLarga: 'Sesiones educativas, talleres y charlas dirigidas a adolescentes, padres de familia, docentes y líderes comunitarios sobre sexualidad, género y derechos.',
+        icono: iconEducacion
+    },
+    {
+        id: 3,
+        titulo: 'Atención Inclusiva',
+        descripcionCorta: 'Acompañamiento a personas con discapacidad con materiales adaptados.',
+        descripcionLarga: 'Acompañamiento y orientación a personas con discapacidad, garantizando un acceso a los servicios de salud y materiales adaptados.',
+        icono: iconInclusiva
+    },
+    {
+        id: 4,
+        titulo: 'Apoyo a Servicios de Salud',
+        descripcionCorta: 'Capacitación, dotación de métodos y coordinación con AIDA y municipios.',
+        descripcionLarga: 'Capacitación al personal de salud, dotación de métodos anticonceptivos y coordinación con los Ambientes Diferenciados para Adolescentes (AIDA) y municipios.',
+        icono: iconApoyo
+    },
+    {
+        id: 5,
+        titulo: 'Referencia y Acompañamiento',
+        descripcionCorta: 'Derivación a servicios especializados con acompañamiento.',
+        descripcionLarga: 'Derivación a servicios especializados y acompañamiento.',
+        icono: iconReferencia
     },
 ];
 
