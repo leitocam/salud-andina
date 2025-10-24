@@ -4,21 +4,27 @@ import { useNavigate } from 'react-router-dom';
 
 const programasData = [
   {
-    titulo: "Adolescentes",
+    titulo: "Salud Sexual y Reproductiva",
     descripcion:
-      "Brindamos a los adolescentes información, consejería y acceso a servicios de salud sexual y reproductiva , promoviendo decisiones informadas y el ejercicio de sus derechos.",
+      "Promovemos el acceso a información y servicios de calidad en planificación familiar, prevención de embarazos no planificados y atención integral en salud sexual y reproductiva.",
     link: "/programa#programas-especificos",
   },
   {
-    titulo: "Personas con Discapacidad",
+    titulo: "Educación Integral en Sexualidad (EIS)",
     descripcion:
-      "Promovemos servicios de salud accesibles, respetuosos e inclusivos, adaptados a las necesidades específicas de personas con discapacidades físicas, sensoriales, intelectuales o mentales.",
+      "Buscamos fortalecer conocimientos, actitudes y valores para una vida saludable y responsable.",
     link: "/programa#programas-especificos",
   },
   {
-    titulo: "Comunidades Vulnerables",
+    titulo: "Inclusión y Discapacidad",
     descripcion:
-      "Trabajamos para garantizar el acceso a servicios de salud sexual y reproductiva adaptados a las necesidades de comunidades rurales, indígenas, y otros grupos que enfrentan barreras sociales, económicas y geográficas.",
+      "Impulsamos la inclusión de personas con discapacidad en el acceso a la salud sexual y reproductiva, eliminando barreras físicas, comunicacionales y actitudinales.",
+    link: "/programa#programas-especificos",
+  },
+  {
+    titulo: "Fortalecimiento Comunitario",
+    descripcion:
+      "Trabajamos con líderes locales, organizaciones sociales y autoridades municipales para promover entornos saludables y sostenibles.",
     link: "/programa#programas-especificos",
   },
 ];

@@ -45,7 +45,7 @@ const ProgramasEspecificos = () => {
 
     return (
         <section id="programas-especificos" className="programas-especificos">
-            <h2 className="programas-title">Conoce cada uno de ellos </h2>
+            <h2 className="programas-title">Conoce cada uno de nuestros programas</h2>
             <div className="programas-grid">
                 {programasData.map((programa) => (
                     <div
